@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HitEvent",
+  "type": "object",
+  "properties": {
+    "type": { "const": "hit_event" },
+    "attackerId": { "type": "string", "minLength": 1 },
+    "targetId": { "type": "string", "minLength": 1 },
+    "roomId": { "type": "string", "minLength": 1 },
+    "zone": { "enum": ["head", "body", "limb"] },
+    "power": { "type": "number", "minimum": 0, "maximum": 1 },
+    "ts": { "type": "number" }
+  },
+  "required": ["type", "attackerId", "targetId", "roomId", "zone", "power", "ts"],
+  "additionalProperties": false
+}

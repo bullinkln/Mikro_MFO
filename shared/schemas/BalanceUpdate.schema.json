@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BalanceUpdateEvent",
+  "type": "object",
+  "properties": {
+    "type": { "const": "balance_update" },
+    "playerId": { "type": "string" },
+    "newBalance": { "type": "number" },
+    "delta": { "type": "number" },
+    "reason": { "enum": ["hit", "deposit", "withdraw", "adjust"] }
+  },
+  "required": ["type", "playerId", "newBalance", "delta", "reason"]
+}

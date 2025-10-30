@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "JoinRoomEvent",
+  "type": "object",
+  "properties": {
+    "type": { "const": "join_room" },
+    "roomId": { "type": "string" },
+    "playerId": { "type": "string" },
+    "nickname": { "type": "string" },
+    "deposit": { "type": "number" },
+    "ping": { "type": "number" },
+    "version": { "type": "string" }
+  },
+  "required": ["type", "roomId", "playerId", "nickname", "deposit", "ping", "version"]
+}
