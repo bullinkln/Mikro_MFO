@@ -1,56 +1,165 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Малоизвестные МФО</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Малоизвестные МФО — дополнительные варианты микрозаймов</title>
+  <meta name="description" content="Малоизвестные МФО: дополнительные варианты микрозаймов на карту, менее перегретые предложения, удобная мобильная витрина и быстрый переход к заявке.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
+  <div class="container">
+    <header>
+      <div class="badge">Обновлено: апрель 2026</div>
+      <h1>Малоизвестные МФО</h1>
+      <p class="lead">Раздел для расширения выбора: менее перегретые предложения, дополнительные варианты и альтернативные сценарии получения займа. Подходит тем, кто уже посмотрел стандартную выдачу и хочет увидеть ещё несколько рабочих вариантов.</p>
+      <div class="hero-meta"><strong>10 предложений</strong> • дополнительный выбор • на карту онлайн</div>
+      <div class="hero-actions">
+        <a class="button" href="#rating-list">Смотреть предложения</a>
+        <a class="button button-secondary" href="novye-mfo.html">Новые МФО</a>
+      </div>
+    </header>
 
-<header>
-<div class="badge">Обновлено: апрель 2026</div>
-<h1>Малоизвестные МФО</h1>
-<p class="lead">Раздел для расширения выбора: менее перегретые предложения и дополнительные варианты займов.</p>
-<div class="hero-meta"><strong>10 предложений</strong></div>
-</header>
+    <div class="section-tabs-wrap">
+      <div class="section-tabs">
+        <a class="section-tab section-tab--ghost" href="index.html">Рейтинг</a>
+        <a class="section-tab section-tab--payday" href="dengi-do-zarplaty.html">Деньги до зарплаты</a>
+        <a class="section-tab section-tab--first" href="pervyi-zaim-bez-procentov.html">Первый займ без процентов</a>
+        <a class="section-tab section-tab--new" href="novye-mfo.html">Новые МФО</a>
+        <a class="section-tab section-tab--rare" href="maloizvestnye-mfo.html">Малоизвестные МФО</a>
+        <a class="section-tab section-tab--clean" href="bez-podpisok.html">Без подписок</a>
+      </div>
+    </div>
 
-<section class="rating-list">
+    <section id="rating-list">
+      <h2>Подборка малоизвестных МФО</h2>
+      <div class="rating-toolbar">
+        <span>Дополнительные варианты</span>
+        <span>На карту онлайн</span>
+      </div>
 
-<!-- 10 нормальных карточек -->
+      <div class="rating-list">
+        <article class="rating-card rating-card--featured">
+          <div class="rating-card__header">
+            <div class="rating-card__brand-wrap">
+              <div class="logo-box">R</div>
+              <div>
+                <h3 class="rating-card__brand">Rare MFO</h3>
+                <p class="rating-card__scenario">Малоизвестный займ на карту</p>
+              </div>
+            </div>
+            <div class="rating-card__score"><strong>9.7</strong><span>из 10</span></div>
+          </div>
+          <div class="rating-card__badges">
+            <a class="section-badge section-badge--rare" href="maloizvestnye-mfo.html">Малоизвестные МФО</a>
+            <span class="signal signal-top">Доп. вариант</span>
+            <span class="signal signal-fast">Быстрый</span>
+          </div>
+          <div class="rating-card__metrics">
+            <div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div>
+            <div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div>
+            <div class="metric"><span class="metric__label">Решение</span><span class="metric__value">онлайн</span></div>
+            <div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div>
+          </div>
+          <div class="rating-card__footer">
+            <a class="cta-button" href="https://212.su/rare1">Получить деньги</a>
+            <div class="rating-card__trust">Менее перегретый сценарий • Дополнительный выбор</div>
+          </div>
+        </article>
 
-" + (function(){let html="";for(let i=0;i<10;i++){html+=`
-<article class="rating-card">
-<div class="rating-card__header">
-<div class="rating-card__brand-wrap">
-<div class="logo-box">R</div>
-<div>
-<h3 class="rating-card__brand">Rare MFO</h3>
-<p class="rating-card__scenario">Малоизвестный займ</p>
-</div>
-</div>
-<div class="rating-card__score"><strong>${(9.7 - i*0.1).toFixed(1)}</strong></div>
-</div>
-<div class="rating-card__badges">
-<span class="section-badge section-badge--rare">Малоизвестные МФО</span>
-<span class="signal signal-top">Доп. вариант</span>
-</div>
-<div class="rating-card__metrics">
-<div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div>
-<div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div>
-<div class="metric"><span class="metric__label">Решение</span><span class="metric__value">онлайн</span></div>
-<div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div>
-</div>
-<div class="rating-card__footer">
-<a class="cta-button" href="#">Получить деньги</a>
-</div>
-</article>
-`;}
-return html;})() +
+        <article class="rating-card">
+          <div class="rating-card__header"><div class="rating-card__brand-wrap"><div class="logo-box">R</div><div><h3 class="rating-card__brand">Rare MFO</h3><p class="rating-card__scenario">Дополнительный вариант займа</p></div></div><div class="rating-card__score"><strong>9.6</strong><span>из 10</span></div></div>
+          <div class="rating-card__badges"><a class="section-badge section-badge--rare" href="maloizvestnye-mfo.html">Малоизвестные МФО</a><span class="signal signal-top">Доп. вариант</span><span class="signal signal-clear">Без лишних услуг</span></div>
+          <div class="rating-card__metrics"><div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div><div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div><div class="metric"><span class="metric__label">Решение</span><span class="metric__value">онлайн</span></div><div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div></div>
+          <div class="rating-card__footer"><a class="cta-button" href="https://212.su/rare2">Получить деньги</a><div class="rating-card__trust">Для расширения сравнения</div></div>
+        </article>
 
-</section>
+        <article class="rating-card">
+          <div class="rating-card__header"><div class="rating-card__brand-wrap"><div class="logo-box">R</div><div><h3 class="rating-card__brand">Rare MFO</h3><p class="rating-card__scenario">Малоизвестный микрозайм</p></div></div><div class="rating-card__score"><strong>9.5</strong><span>из 10</span></div></div>
+          <div class="rating-card__badges"><a class="section-badge section-badge--rare" href="maloizvestnye-mfo.html">Малоизвестные МФО</a><span class="signal signal-fast">Быстрый</span><span class="signal signal-top">Доп. вариант</span></div>
+          <div class="rating-card__metrics"><div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div><div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div><div class="metric"><span class="metric__label">Решение</span><span class="metric__value">быстро</span></div><div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div></div>
+          <div class="rating-card__footer"><a class="cta-button" href="https://212.su/rare3">Получить деньги</a><div class="rating-card__trust">Под короткий срок</div></div>
+        </article>
 
-</div>
+        <article class="rating-card">
+          <div class="rating-card__header"><div class="rating-card__brand-wrap"><div class="logo-box">R</div><div><h3 class="rating-card__brand">Rare MFO</h3><p class="rating-card__scenario">МФО вне стандартного топа</p></div></div><div class="rating-card__score"><strong>9.4</strong><span>из 10</span></div></div>
+          <div class="rating-card__badges"><a class="section-badge section-badge--rare" href="maloizvestnye-mfo.html">Малоизвестные МФО</a><span class="signal signal-top">Доп. вариант</span><span class="signal signal-new">Новый</span></div>
+          <div class="rating-card__metrics"><div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div><div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div><div class="metric"><span class="metric__label">Решение</span><span class="metric__value">онлайн</span></div><div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div></div>
+          <div class="rating-card__footer"><a class="cta-button" href="https://212.su/rare4">Получить деньги</a><div class="rating-card__trust">Когда нужен ещё один вариант</div></div>
+        </article>
+
+        <article class="rating-card">
+          <div class="rating-card__header"><div class="rating-card__brand-wrap"><div class="logo-box">R</div><div><h3 class="rating-card__brand">Rare MFO</h3><p class="rating-card__scenario">Альтернативный займ онлайн</p></div></div><div class="rating-card__score"><strong>9.3</strong><span>из 10</span></div></div>
+          <div class="rating-card__badges"><a class="section-badge section-badge--rare" href="maloizvestnye-mfo.html">Малоизвестные МФО</a><span class="signal signal-clear">Без лишних услуг</span><span class="signal signal-top">Доп. вариант</span></div>
+          <div class="rating-card__metrics"><div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div><div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 31 дня</span></div><div class="metric"><span class="metric__label">Решение</span><span class="metric__value">онлайн</span></div><div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div></div>
+          <div class="rating-card__footer"><a class="cta-button" href="https://212.su/rare5">Получить деньги</a><div class="rating-card__trust">Когда хочется расширить поиск</div></div>
+        </article>
+
+        <article class="rating-card">
+          <div class="rating-card__header"><div class="rating-card__brand-wrap"><div class="logo-box">R</div><div><h3 class="rating-card__brand">Rare MFO</h3><p class="rating-card__scenario">Менее известный займ на карту</p></div></div><div class="rating-card__score"><strong>9.2</strong><span>из 10</span></div></div>
+          <div class="rating-card__badges"><a class="section-badge section-badge--rare" href="maloizvestnye-mfo.html">Малоизвестные МФО</a><span class="signal signal-fast">Быстрый</span><span class="signal signal-clear">Без лишних услуг</span></div>
+          <div class="rating-card__metrics"><div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div><div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div><div class="metric"><span class="metric__label">Решение</span><span class="metric__value">быстро</span></div><div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div></div>
+          <div class="rating-card__footer"><a class="cta-button" href="https://212.su/rare6">Получить деньги</a><div class="rating-card__trust">Под короткий мобильный сценарий</div></div>
+        </article>
+
+        <article class="rating-card">
+          <div class="rating-card__header"><div class="rating-card__brand-wrap"><div class="logo-box">R</div><div><h3 class="rating-card__brand">Rare MFO</h3><p class="rating-card__scenario">Дополнительный вариант на карту</p></div></div><div class="rating-card__score"><strong>9.1</strong><span>из 10</span></div></div>
+          <div class="rating-card__badges"><a class="section-badge section-badge--rare" href="maloizvestnye-mfo.html">Малоизвестные МФО</a><span class="signal signal-top">Доп. вариант</span><span class="signal signal-fast">Быстрый</span></div>
+          <div class="rating-card__metrics"><div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div><div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div><div class="metric"><span class="metric__label">Решение</span><span class="metric__value">онлайн</span></div><div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div></div>
+          <div class="rating-card__footer"><a class="cta-button" href="https://212.su/rare7">Получить деньги</a><div class="rating-card__trust">Для дополнительного сравнения</div></div>
+        </article>
+
+        <article class="rating-card">
+          <div class="rating-card__header"><div class="rating-card__brand-wrap"><div class="logo-box">R</div><div><h3 class="rating-card__brand">Rare MFO</h3><p class="rating-card__scenario">Малоизвестный займ онлайн</p></div></div><div class="rating-card__score"><strong>9.0</strong><span>из 10</span></div></div>
+          <div class="rating-card__badges"><a class="section-badge section-badge--rare" href="maloizvestnye-mfo.html">Малоизвестные МФО</a><span class="signal signal-new">Новый</span><span class="signal signal-top">Доп. вариант</span></div>
+          <div class="rating-card__metrics"><div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div><div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div><div class="metric"><span class="metric__label">Решение</span><span class="metric__value">онлайн</span></div><div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div></div>
+          <div class="rating-card__footer"><a class="cta-button" href="https://212.su/rare8">Получить деньги</a><div class="rating-card__trust">Когда нужен новый альтернативный вариант</div></div>
+        </article>
+
+        <article class="rating-card">
+          <div class="rating-card__header"><div class="rating-card__brand-wrap"><div class="logo-box">R</div><div><h3 class="rating-card__brand">Rare MFO</h3><p class="rating-card__scenario">Небольшой малоизвестный займ</p></div></div><div class="rating-card__score"><strong>8.9</strong><span>из 10</span></div></div>
+          <div class="rating-card__badges"><a class="section-badge section-badge--rare" href="maloizvestnye-mfo.html">Малоизвестные МФО</a><span class="signal signal-clear">Без лишних услуг</span><span class="signal signal-fast">Быстрый</span></div>
+          <div class="rating-card__metrics"><div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div><div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div><div class="metric"><span class="metric__label">Решение</span><span class="metric__value">быстро</span></div><div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div></div>
+          <div class="rating-card__footer"><a class="cta-button" href="https://212.su/rare9">Получить деньги</a><div class="rating-card__trust">Под короткий срок и дополнительный поиск</div></div>
+        </article>
+
+        <article class="rating-card">
+          <div class="rating-card__header"><div class="rating-card__brand-wrap"><div class="logo-box">R</div><div><h3 class="rating-card__brand">Rare MFO</h3><p class="rating-card__scenario">Альтернатива стандартной выдаче</p></div></div><div class="rating-card__score"><strong>8.8</strong><span>из 10</span></div></div>
+          <div class="rating-card__badges"><a class="section-badge section-badge--rare" href="maloizvestnye-mfo.html">Малоизвестные МФО</a><span class="signal signal-top">Доп. вариант</span><span class="signal signal-clear">Без лишних услуг</span></div>
+          <div class="rating-card__metrics"><div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div><div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div><div class="metric"><span class="metric__label">Решение</span><span class="metric__value">онлайн</span></div><div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div></div>
+          <div class="rating-card__footer"><a class="cta-button" href="https://212.su/rare10">Получить деньги</a><div class="rating-card__trust">Для тех, кто хочет выйти за рамки топа</div></div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Зачем пользователи ищут малоизвестные МФО</h2>
+      <div class="section-box">
+        <p>Этот кластер закрывает пользователей, которые уже посмотрели популярные предложения и хотят увидеть дополнительные варианты. Часто он даёт хорошие конверсии, потому что человек уже находится в стадии выбора и готов сравнивать альтернативы.</p>
+        <p>Если нужен просто короткий займ на небольшой срок, полезно дополнительно открыть раздел «Деньги до зарплаты». Если важны стартовые условия для первого обращения, стоит посмотреть раздел «Первый займ без процентов».</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Кому подойдёт этот раздел</h2>
+      <div class="grid">
+        <div class="card"><h3>Тем, кто уже видел популярные витрины</h3><p>Раздел помогает выйти за рамки стандартной выдачи и посмотреть дополнительные рабочие варианты.</p></div>
+        <div class="card"><h3>Тем, кто хочет расширить сравнение</h3><p>Подборка полезна, когда нужно посмотреть больше сценариев перед выбором.</p></div>
+        <div class="card"><h3>Тем, кто ищет отдельный long-tail кластер</h3><p>Это один из самых полезных разделов для расширения структуры SEO-витрины микрозаймов.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Частые вопросы</h2>
+      <div class="faq-item"><strong>Что обычно понимают под малоизвестными МФО?</strong><br>Обычно это дополнительные варианты, которые встречаются реже, чем самые известные бренды из общей выдачи.</div>
+      <div class="faq-item"><strong>Это отдельная категория займов?</strong><br>Нет, это скорее сценарий поиска и сравнения альтернативных МФО.</div>
+      <div class="faq-item"><strong>Где посмотреть более стандартные короткие займы?</strong><br>Для этого на витрине есть раздел «Деньги до зарплаты».</div>
+      <div class="faq-item"><strong>Почему переходы идут через 212.su?</strong><br>Так удобнее централизованно обновлять предложения и менять партнёрские ссылки без переписывания всех страниц.</div>
+    </section>
+
+    <footer>
+      <p>Перед оформлением займа проверяйте срок возврата, итоговую стоимость и дополнительные условия на стороне выбранной МФО.</p>
+    </footer>
+  </div>
 </body>
 </html>
