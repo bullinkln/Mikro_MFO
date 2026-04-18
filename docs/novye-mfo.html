@@ -1,46 +1,165 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Новые МФО</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новые МФО — новые микрозаймы на карту</title>
+  <meta name="description" content="Новые МФО: подборка новых микрозаймов на карту, дополнительные варианты, менее перегретые предложения и удобный переход к заявке.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-<section class="rating-list">
+  <div class="container">
+    <header>
+      <div class="badge">Обновлено: апрель 2026</div>
+      <h1>Новые МФО</h1>
+      <p class="lead">Раздел для пользователей, которые ищут новые микрозаймы и дополнительные варианты. Это сильный SEO-кластер: конкуренция тут ниже, чем у широких запросов про микрозаймы, а коммерческий интент уже готовый — пользователь хочет оформить займ, но ищет свежие варианты.</p>
+      <div class="hero-meta"><strong>10 предложений</strong> • новые МФО • на карту онлайн</div>
+      <div class="hero-actions">
+        <a class="button" href="#rating-list">Смотреть предложения</a>
+        <a class="button button-secondary" href="dengi-do-zarplaty.html">До зарплаты</a>
+      </div>
+    </header>
 
-<!-- FIXED: all cards now have 4 metrics -->
+    <div class="section-tabs-wrap">
+      <div class="section-tabs">
+        <a class="section-tab section-tab--ghost" href="index.html">Рейтинг</a>
+        <a class="section-tab section-tab--payday" href="dengi-do-zarplaty.html">Деньги до зарплаты</a>
+        <a class="section-tab section-tab--first" href="pervyi-zaim-bez-procentov.html">Первый займ без процентов</a>
+        <a class="section-tab section-tab--new" href="novye-mfo.html">Новые МФО</a>
+        <a class="section-tab section-tab--rare" href="maloizvestnye-mfo.html">Малоизвестные МФО</a>
+        <a class="section-tab section-tab--clean" href="bez-podpisok.html">Без подписок</a>
+      </div>
+    </div>
 
-" + [...Array(10)].map((_,i)=>`
-<article class="rating-card">
-<div class="rating-card__header">
-<div class="rating-card__brand-wrap">
-<div class="logo-box">N</div>
-<div>
-<h3 class="rating-card__brand">New MFO</h3>
-<p class="rating-card__scenario">Новый микрозайм</p>
-</div>
-</div>
-<div class="rating-card__score"><strong>${9.8 - i*0.1}</strong></div>
-</div>
-<div class="rating-card__badges">
-<span class="section-badge section-badge--new">Новые МФО</span>
-<span class="signal signal-fast">Быстрый</span>
-</div>
-<div class="rating-card__metrics">
-<div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div>
-<div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div>
-<div class="metric"><span class="metric__label">Решение</span><span class="metric__value">онлайн</span></div>
-<div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div>
-</div>
-<div class="rating-card__footer">
-<a class="cta-button" href="#">Получить деньги</a>
-</div>
-</article>
-`).join("") +
+    <section id="rating-list">
+      <h2>Подборка новых микрозаймов</h2>
+      <div class="rating-toolbar">
+        <span>Новые и дополнительные варианты</span>
+        <span>На карту онлайн</span>
+      </div>
 
-</section>
-</div>
+      <div class="rating-list">
+        <article class="rating-card rating-card--featured">
+          <div class="rating-card__header">
+            <div class="rating-card__brand-wrap">
+              <div class="logo-box">N</div>
+              <div>
+                <h3 class="rating-card__brand">New MFO</h3>
+                <p class="rating-card__scenario">Новый микрозайм на карту</p>
+              </div>
+            </div>
+            <div class="rating-card__score"><strong>9.8</strong><span>из 10</span></div>
+          </div>
+          <div class="rating-card__badges">
+            <a class="section-badge section-badge--new" href="novye-mfo.html">Новые МФО</a>
+            <span class="signal signal-new">Новый • 2026</span>
+            <span class="signal signal-best">Лучшее предложение</span>
+          </div>
+          <div class="rating-card__metrics">
+            <div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div>
+            <div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div>
+            <div class="metric"><span class="metric__label">Решение</span><span class="metric__value">онлайн</span></div>
+            <div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div>
+          </div>
+          <div class="rating-card__footer">
+            <a class="cta-button" href="https://212.su/new1">Получить деньги</a>
+            <div class="rating-card__trust">Свежий вариант • Быстрый старт</div>
+          </div>
+        </article>
+
+        <article class="rating-card">
+          <div class="rating-card__header"><div class="rating-card__brand-wrap"><div class="logo-box">N</div><div><h3 class="rating-card__brand">New MFO</h3><p class="rating-card__scenario">Дополнительный вариант займа</p></div></div><div class="rating-card__score"><strong>9.6</strong><span>из 10</span></div></div>
+          <div class="rating-card__badges"><a class="section-badge section-badge--new" href="novye-mfo.html">Новые МФО</a><span class="signal signal-new">Новый</span><span class="signal signal-fast">Быстрый</span></div>
+          <div class="rating-card__metrics"><div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div><div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div><div class="metric"><span class="metric__label">Решение</span><span class="metric__value">онлайн</span></div><div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div></div>
+          <div class="rating-card__footer"><a class="cta-button" href="https://212.su/new2">Получить деньги</a><div class="rating-card__trust">Для расширения выбора</div></div>
+        </article>
+
+        <article class="rating-card">
+          <div class="rating-card__header"><div class="rating-card__brand-wrap"><div class="logo-box">N</div><div><h3 class="rating-card__brand">New MFO</h3><p class="rating-card__scenario">Новый займ онлайн</p></div></div><div class="rating-card__score"><strong>9.5</strong><span>из 10</span></div></div>
+          <div class="rating-card__badges"><a class="section-badge section-badge--new" href="novye-mfo.html">Новые МФО</a><span class="signal signal-fast">Быстрый</span><span class="signal signal-top">Популярный</span></div>
+          <div class="rating-card__metrics"><div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div><div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div><div class="metric"><span class="metric__label">Решение</span><span class="metric__value">быстро</span></div><div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div></div>
+          <div class="rating-card__footer"><a class="cta-button" href="https://212.su/new3">Получить деньги</a><div class="rating-card__trust">Под мобильный сценарий</div></div>
+        </article>
+
+        <article class="rating-card">
+          <div class="rating-card__header"><div class="rating-card__brand-wrap"><div class="logo-box">N</div><div><h3 class="rating-card__brand">New MFO</h3><p class="rating-card__scenario">Новый займ 2026</p></div></div><div class="rating-card__score"><strong>9.4</strong><span>из 10</span></div></div>
+          <div class="rating-card__badges"><a class="section-badge section-badge--new" href="novye-mfo.html">Новые МФО</a><span class="signal signal-new">2026</span><span class="signal signal-fast">Быстрый</span></div>
+          <div class="rating-card__metrics"><div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div><div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div><div class="metric"><span class="metric__label">Решение</span><span class="metric__value">онлайн</span></div><div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div></div>
+          <div class="rating-card__footer"><a class="cta-button" href="https://212.su/new4">Получить деньги</a><div class="rating-card__trust">Свежий сценарий выбора</div></div>
+        </article>
+
+        <article class="rating-card">
+          <div class="rating-card__header"><div class="rating-card__brand-wrap"><div class="logo-box">N</div><div><h3 class="rating-card__brand">New MFO</h3><p class="rating-card__scenario">Новый сервис займов</p></div></div><div class="rating-card__score"><strong>9.3</strong><span>из 10</span></div></div>
+          <div class="rating-card__badges"><a class="section-badge section-badge--new" href="novye-mfo.html">Новые МФО</a><span class="signal signal-top">Популярный</span><span class="signal signal-new">Новый</span></div>
+          <div class="rating-card__metrics"><div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div><div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div><div class="metric"><span class="metric__label">Решение</span><span class="metric__value">онлайн</span></div><div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div></div>
+          <div class="rating-card__footer"><a class="cta-button" href="https://212.su/new5">Получить деньги</a><div class="rating-card__trust">Когда нужен дополнительный выбор</div></div>
+        </article>
+
+        <article class="rating-card">
+          <div class="rating-card__header"><div class="rating-card__brand-wrap"><div class="logo-box">N</div><div><h3 class="rating-card__brand">New MFO</h3><p class="rating-card__scenario">Онлайн займ на карту</p></div></div><div class="rating-card__score"><strong>9.2</strong><span>из 10</span></div></div>
+          <div class="rating-card__badges"><a class="section-badge section-badge--new" href="novye-mfo.html">Новые МФО</a><span class="signal signal-fast">Быстрый</span><span class="signal signal-new">Новый</span></div>
+          <div class="rating-card__metrics"><div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div><div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div><div class="metric"><span class="metric__label">Решение</span><span class="metric__value">быстро</span></div><div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div></div>
+          <div class="rating-card__footer"><a class="cta-button" href="https://212.su/new6">Получить деньги</a><div class="rating-card__trust">Под короткий онлайн-сценарий</div></div>
+        </article>
+
+        <article class="rating-card">
+          <div class="rating-card__header"><div class="rating-card__brand-wrap"><div class="logo-box">N</div><div><h3 class="rating-card__brand">New MFO</h3><p class="rating-card__scenario">Дополнительный оффер</p></div></div><div class="rating-card__score"><strong>9.1</strong><span>из 10</span></div></div>
+          <div class="rating-card__badges"><a class="section-badge section-badge--new" href="novye-mfo.html">Новые МФО</a><span class="signal signal-top">Популярный</span><span class="signal signal-fast">Быстрый</span></div>
+          <div class="rating-card__metrics"><div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div><div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div><div class="metric"><span class="metric__label">Решение</span><span class="metric__value">онлайн</span></div><div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div></div>
+          <div class="rating-card__footer"><a class="cta-button" href="https://212.su/new7">Получить деньги</a><div class="rating-card__trust">Для расширения сравнения</div></div>
+        </article>
+
+        <article class="rating-card">
+          <div class="rating-card__header"><div class="rating-card__brand-wrap"><div class="logo-box">N</div><div><h3 class="rating-card__brand">New MFO</h3><p class="rating-card__scenario">Новая МФО онлайн</p></div></div><div class="rating-card__score"><strong>9.0</strong><span>из 10</span></div></div>
+          <div class="rating-card__badges"><a class="section-badge section-badge--new" href="novye-mfo.html">Новые МФО</a><span class="signal signal-new">Новый</span><span class="signal signal-fast">Быстрый</span></div>
+          <div class="rating-card__metrics"><div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div><div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div><div class="metric"><span class="metric__label">Решение</span><span class="metric__value">онлайн</span></div><div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div></div>
+          <div class="rating-card__footer"><a class="cta-button" href="https://212.su/new8">Получить деньги</a><div class="rating-card__trust">Под поиск свежих вариантов</div></div>
+        </article>
+
+        <article class="rating-card">
+          <div class="rating-card__header"><div class="rating-card__brand-wrap"><div class="logo-box">N</div><div><h3 class="rating-card__brand">New MFO</h3><p class="rating-card__scenario">Свежий займ на карту</p></div></div><div class="rating-card__score"><strong>8.9</strong><span>из 10</span></div></div>
+          <div class="rating-card__badges"><a class="section-badge section-badge--new" href="novye-mfo.html">Новые МФО</a><span class="signal signal-fast">Быстрый</span><span class="signal signal-top">Популярный</span></div>
+          <div class="rating-card__metrics"><div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div><div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div><div class="metric"><span class="metric__label">Решение</span><span class="metric__value">быстро</span></div><div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div></div>
+          <div class="rating-card__footer"><a class="cta-button" href="https://212.su/new9">Получить деньги</a><div class="rating-card__trust">Ещё один вариант под мобильный трафик</div></div>
+        </article>
+
+        <article class="rating-card">
+          <div class="rating-card__header"><div class="rating-card__brand-wrap"><div class="logo-box">N</div><div><h3 class="rating-card__brand">New MFO</h3><p class="rating-card__scenario">Новый займ без лишнего шума</p></div></div><div class="rating-card__score"><strong>8.8</strong><span>из 10</span></div></div>
+          <div class="rating-card__badges"><a class="section-badge section-badge--new" href="novye-mfo.html">Новые МФО</a><span class="signal signal-new">2026</span><span class="signal signal-clear">Без лишних услуг</span></div>
+          <div class="rating-card__metrics"><div class="metric"><span class="metric__label">Сумма</span><span class="metric__value">до 30 000 ₽</span></div><div class="metric"><span class="metric__label">Срок</span><span class="metric__value">до 30 дней</span></div><div class="metric"><span class="metric__label">Решение</span><span class="metric__value">онлайн</span></div><div class="metric"><span class="metric__label">Формат</span><span class="metric__value">на карту</span></div></div>
+          <div class="rating-card__footer"><a class="cta-button" href="https://212.su/new10">Получить деньги</a><div class="rating-card__trust">Для менее перегретого выбора</div></div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Зачем пользователи ищут новые МФО</h2>
+      <div class="section-box">
+        <p>Часто этот запрос появляется после просмотра популярных витрин, когда пользователь хочет найти дополнительные варианты и посмотреть менее перегретые предложения. Это сильный long-tail кластер, который хорошо подходит для SEO-витрины на GitHub.</p>
+        <p>Если нужен не поиск новых брендов, а просто короткий займ на небольшой срок, полезно дополнительно открыть раздел «Деньги до зарплаты». Если важны стартовые условия для первого обращения, лучше перейти в раздел «Первый займ без процентов».</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Кому подойдёт этот раздел</h2>
+      <div class="grid">
+        <div class="card"><h3>Тем, кто уже видел популярные витрины</h3><p>Раздел помогает не зацикливаться только на стандартных вариантах из общей выдачи.</p></div>
+        <div class="card"><h3>Тем, кто хочет расширить выбор</h3><p>Подходит пользователям, которым мало 2–3 привычных сценариев и нужен дополнительный список.</p></div>
+        <div class="card"><h3>Тем, кто ищет менее перегретый кластер</h3><p>Это один из самых полезных long-tail разделов для витрины микрозаймов.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Частые вопросы</h2>
+      <div class="faq-item"><strong>Что обычно имеют в виду под новыми МФО?</strong><br>Обычно речь идёт о дополнительных или менее заезженных вариантах, которые хочется сравнить с уже знакомыми сервисами.</div>
+      <div class="faq-item"><strong>Это отдельный тип займа?</strong><br>Нет, это скорее сценарий выбора и поиска дополнительных предложений на рынке.</div>
+      <div class="faq-item"><strong>Где смотреть более стандартные короткие займы?</strong><br>Для этого на витрине есть раздел «Деньги до зарплаты».</div>
+      <div class="faq-item"><strong>Почему переходы идут через 212.su?</strong><br>Так проще централизованно обновлять предложения и менять партнёрские ссылки без переписывания страниц.</div>
+    </section>
+
+    <footer>
+      <p>Перед оформлением займа проверяйте срок возврата, итоговую стоимость и дополнительные условия на стороне выбранной МФО.</p>
+    </footer>
+  </div>
 </body>
 </html>
