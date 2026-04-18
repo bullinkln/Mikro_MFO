@@ -116,6 +116,7 @@ p {
   z-index: 20;
   margin-top: 14px;
   padding: 8px 0 10px;
+  overflow: visible;
   background: rgba(7, 17, 31, 0.84);
   backdrop-filter: blur(10px);
 }
@@ -124,7 +125,7 @@ p {
   display: flex;
   gap: 10px;
   overflow-x: auto;
-  padding-bottom: 4px;
+  padding: 2px 0 4px;
   scrollbar-width: none;
   -ms-overflow-style: none;
   scroll-snap-type: x proximity;
@@ -149,12 +150,12 @@ nav.top-nav a {
   font-weight: 700;
   white-space: nowrap;
   scroll-snap-align: start;
-  transition: transform 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+  transition: border-color 0.16s ease, background 0.16s ease, box-shadow 0.16s ease;
 }
 
 .section-tab:hover,
 nav.top-nav a:hover {
-  transform: translateY(-1px);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04) inset;
 }
 
 .section-tab--active,
@@ -613,6 +614,30 @@ footer {
     padding: 14px;
   }
 
+  .section-tabs-wrap {
+    margin-top: 12px;
+    padding: 6px 0 8px;
+  }
+
+  .section-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    overflow: visible;
+    padding: 0;
+    scroll-snap-type: none;
+  }
+
+  .section-tab {
+    width: 100%;
+    min-height: 54px;
+    padding: 8px 10px;
+    font-size: 12px;
+    line-height: 1.15;
+    white-space: normal;
+    text-align: center;
+  }
+
   .rating-card__brand {
     font-size: 21px;
   }
@@ -629,5 +654,12 @@ footer {
 
   nav.top-nav {
     display: none;
+  }
+}
+
+@media (hover: none) {
+  .section-tab:hover,
+  nav.top-nav a:hover {
+    box-shadow: none;
   }
 }
