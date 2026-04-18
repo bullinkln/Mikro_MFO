@@ -12,25 +12,15 @@
 <header>
 <div class="badge">Обновлено: апрель 2026</div>
 <h1>Малоизвестные МФО</h1>
-<p class="lead">Раздел для расширения выбора: менее перегретые офферы, дополнительные варианты и альтернативные сценарии получения займа.</p>
+<p class="lead">Раздел для расширения выбора: менее перегретые предложения и дополнительные варианты займов.</p>
 <div class="hero-meta"><strong>10 предложений</strong></div>
 </header>
 
-<div class="section-tabs-wrap">
-<div class="section-tabs">
-<a class="section-tab section-tab--ghost" href="index.html">Рейтинг</a>
-<a class="section-tab section-tab--payday" href="dengi-do-zarplaty.html">До зарплаты</a>
-<a class="section-tab section-tab--first" href="pervyi-zaim-bez-procentov.html">Первый займ</a>
-<a class="section-tab section-tab--new" href="novye-mfo.html">Новые</a>
-<a class="section-tab section-tab--rare" href="maloizvestnye-mfo.html">Малоизвестные</a>
-</div>
-</div>
-
 <section class="rating-list">
 
-<!-- 10 uniform cards -->
+<!-- 10 нормальных карточек -->
 
-" + [...Array(10)].map((_,i)=>`
+" + (function(){let html="";for(let i=0;i<10;i++){html+=`
 <article class="rating-card">
 <div class="rating-card__header">
 <div class="rating-card__brand-wrap">
@@ -40,7 +30,7 @@
 <p class="rating-card__scenario">Малоизвестный займ</p>
 </div>
 </div>
-<div class="rating-card__score"><strong>${9.7 - i*0.1}</strong></div>
+<div class="rating-card__score"><strong>${(9.7 - i*0.1).toFixed(1)}</strong></div>
 </div>
 <div class="rating-card__badges">
 <span class="section-badge section-badge--rare">Малоизвестные МФО</span>
@@ -56,15 +46,9 @@
 <a class="cta-button" href="#">Получить деньги</a>
 </div>
 </article>
-`).join("") +
+`;}
+return html;})() +
 
-</section>
-
-<section>
-<h2>Зачем искать малоизвестные МФО</h2>
-<div class="section-box">
-<p>Этот кластер закрывает пользователей, которые уже посмотрели топ и хотят дополнительные варианты. Часто даёт хорошие конверсии за счёт менее перегретых офферов.</p>
-</div>
 </section>
 
 </div>
