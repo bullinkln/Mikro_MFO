@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bullinkln.github.io/Mikro_MFO/sitemap.xml
